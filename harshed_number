@@ -1,0 +1,22 @@
+import java.util.*;
+class harshed_number
+{
+public static void main(String args[])
+{
+int n,a,rem,sum=0;
+Scanner s=new Scanner(System.in);
+n=s.nextInt();
+a=n;
+while(n>0)
+{
+rem=n%10;
+sum=sum+rem;
+n=n/10;
+}
+if(a%sum==0)
+System.out.println("Harshed Number");
+else
+System.out.println(" Not Harshed Number");
+}
+}
+

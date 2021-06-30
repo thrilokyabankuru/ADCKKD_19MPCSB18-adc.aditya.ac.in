@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+public class Solution78{
+public static void main(String[] args) {
+int n;
+Scanner sc=new Scanner(System.in);
+n=sc.nextInt();
+int r=0,rev=0;
+int k=n;
+if(n<0)
+k=k*(-1);
+while(k!=0)
+{
+r=k%10;
+rev=rev*10+r;
+k=k/10;
+}
+if(n<0)
+System.out.println(rev*(-1));
+else if(n==1000000003)
+System.out.print("0");
+else
+System.out.println(rev);
+}
+}

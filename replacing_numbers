@@ -1,0 +1,30 @@
+import java.util.*;
+class replacing_numbers
+{
+public static void main(String args[])
+{
+int n,x,y,rem,count1=1,digit_count1=0;
+Scanner s=new Scanner(System.in);
+n=s.nextInt();
+x=s.nextInt();
+y=s.nextInt();
+while(n>0)
+{
+rem=n%10;
+n=n/10;
+if(rem==x)
+{
+rem=y;
+digit_count1=count1*rem+digit_count1;
+count1=count1*10;
+}
+else
+{
+digit_count1=count1*rem+digit_count1;
+count1=count1*10;
+}
+}
+System.out.println(digit_count1);
+}
+}
+

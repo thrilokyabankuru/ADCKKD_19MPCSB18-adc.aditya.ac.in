@@ -16,25 +16,25 @@ int result=0;
             {
                 result=i;
                 System.out.println(result); 
-               
+                break;
             }
             else if(a.length==1 && target!=0)
             {
                 result=1;
-                 System.out.println(result); 
-            }
-               
-               
+                System.out.println(result); 
+                break;
+            }  
             else if(a[i]<target && a[i+1]>target)
             {
                 result=i+1;
                System.out.println(result);
-              
+               break;
             }
             else if(a[i]<target && a[n-1]<target)
             {
                 result=n;
                System.out.println(n);
+               break;
                
             }
             else if(target==0)

@@ -10,7 +10,12 @@ for(int i=1;i<n;i++)
 {
 a[i]=a[i-1]+2*i;
 }
+System.out.println("enter query");
+int Q=s.nextInt();
+for(int j=0;j<Q;j++)
+{
 int sum=s.nextInt();
 System.out.println(a[sum]);
+}
 }
 }

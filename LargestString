@@ -1,0 +1,19 @@
+import java.util.*;
+class TestClass {
+    public static void main(String args[] ) throws Exception {
+        Scanner sc=new Scanner(System.in);
+        String A=sc.next();
+        String B=sc.next();
+        String T=A+B;
+        String C="";
+        
+        char[] ch = T.toCharArray();
+	        Arrays.sort(ch);
+	        
+	       for(int i=T.length();i>0;i--)
+	       {
+	    	   C=C+ch[i-1];
+	       }
+	       System.out.println(C);
+         }
+         }
